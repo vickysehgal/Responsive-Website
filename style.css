@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #111827;
+  color: white;
+}
+
+/* navigation bar */
+img:hover {
+  cursor: pointer;
+}
+
+nav {
+  margin: 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 20px;
+}
+img[alt="menu"] {
+  width: 20px;
+  display: none;
+}
+.home-option {
+  padding: 5px 10px;
+  background-color: rgb(100, 100, 224);
+  border-radius: 15px;
+}
+
+/* intro section */
+.intro {
+  max-width: 100vw;
+  margin: 50px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.intro-line-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+}
+.intro-line-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.intro-line-2 h1 {
+  font-size: 3.75rem;
+}
+.intro-line-2 h2 {
+  font-size: 2.1875rem;
+  color: rgb(197, 197, 89);
+}
+img[alt="hello"]{
+  width: 45px;
+}
+img[alt="pc-image"]{
+  width: 380px;
+}
+
+/* project */
+.projects{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.projects div h1{
+  font-size: 40px;
+}
+.horizontal-divider{
+  height: 5px;
+  width: 140px;
+  background-color: royalblue;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.project-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+/* .project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+img[alt="project-image"]{
+  width: 250px;
+}
+
+/* foooter */
+.contact{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contact div h1{
+  font-size: 40px;
+}
+.contact-me-underline{
+  height: 5px;
+  width: 202px;
+  background-color: royalblue;
+  border-radius: 20px;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.socials img{
+  width: 30px;
+}
+.socials img:nth-child(3){
+  width: 50px;
+}
+
+/* media query */
+@media screen and (max-width: 576px) {
+
+  nav ul{
+    display: none;
+  }
+  img[alt="menu"]{
+    display: block;
+  }
+  .intro{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  img[alt="pc-image"]{
+    width: 200px;
+  }
+  .intro-line-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+  .intro-line-2 h1{
+    font-size: 40px;
+  }
+  .intro-line-2 h2{
+    font-size: 25px;
+    text-align: center;
+  }
+  .project-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  img[alt="project-image"]{
+    width: 55vw;
+  }
+  .projects div h1{
+    font-size: 35px;
+  }
+  .contact div h1{
+    font-size: 35px;
+  }
+  .contact-me-underline{
+    width: 178px;
+  }
+  
+}
